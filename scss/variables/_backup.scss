@@ -1,0 +1,346 @@
+/*funciones, variables y mixins que emplearemos en el resto de ficheros*/
+
+
+
+
+/*Variables titulo-h1*/
+$display: flex;
+$justify-content: left;
+$padding: 100px !important;
+$transform: skewX(20deg);
+$color:darkred;
+$text-align :left;
+$text-transform:uppercase;
+$font-family:cursive;
+$font-size:90px;
+$height:80px;
+
+h1{
+    padding: $padding;
+    color: $color;
+    text-align: $text-align;
+    font-size: $font-size;
+    text-transform: $text-transform;
+    font-family: $font-family;
+    height: $height;
+}
+
+/*Variables titulo-h2*/
+$font-size: 50px;
+$margin: 5px 130px 0px;
+$font-family: cursive;
+$border-radius: 20px;
+$display: flex;
+$justify-content: left;
+$padding: 0 50px;
+$transform: skewX(20deg);
+
+h2{
+    font-size: $font-size;
+    margin: $margin;
+    font-family: $font-family;
+    border-radius: $border-radius;
+    display: $display;
+    justify-content: $justify-content;
+    padding: $padding;
+    transform: $transform;
+    
+}
+    
+
+
+/*Variables parrrafo*/
+$display:flex;
+$padding-bottom: 200px; 
+$font-size: 50px;
+$font-family: 'EB Garamond', serif ;
+$font-style: oblique ;
+$background-color: gray;    
+$padding: 20px 10px 10px ;
+$border-radius:20px;
+
+.parrafo{
+    display:$display;
+    padding-bottom: $padding-bottom; 
+    font-size: $font-size;
+    font-family: $font-family ;
+    font-style: $font-style ;
+    background-color: $background-color;    
+    padding: 20px $padding;
+    border-radius: $border-radius;
+}
+
+
+
+
+/*Variables section-2*/
+$background-size: contain;
+$display: flex;
+$justify-content: center;
+$background-color: #FBCEB1;
+$padding-bottom: 50px;
+
+.section-2{
+    background-size: $background-size;
+    display: $display;
+    justify-content: $justify-content;
+    background-color: $background-color;
+    padding-bottom: $padding-bottom;
+}
+/*Variabes frase-1*/
+$display: flex;
+$justify-content: left;
+$font-size: 40px;
+$font-weight: bold;
+$margin: 50px;
+$color: #B31B1B;
+$font-family: cursive;
+
+.frase-1{
+    display: $display;
+    justify-content: $justify-content;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    margin: $margin;
+    color: $color;
+    font-family: $font-family;
+}
+
+/*Variables frase-2*/
+$display: flex;
+$margin: 50px;
+$font-size: 25px;
+$font-family: cursive;
+$color: black;
+
+.frase-2{
+    display: $display;
+    margin: $margin;
+    font-size: $font-size;
+    font-family: $font-family;
+    color:$color;
+}
+
+/*Variables iframe*/
+$width:78vh;
+$height:75%;
+$justify-content: center;
+$display : flex;
+$margin-top: 100px; 
+
+iframe{
+    width:$width;
+    height:$height;
+    justify-content: $justify-content;
+    display : $display;
+    margin-top: $margin-top; 
+}
+
+/*Variables dropdown*/
+$display: flex;
+$justify-content: flex-end ;
+$margin-bottom: 200px;
+$width: 200px;
+
+.btn{
+    display: $display;
+    justify-content: $justify-content ;
+    margin-bottom: $margin-bottom;
+    width: $width;
+}
+
+
+/*Variables section-3*/
+$background-color: whitesmoke;
+$display: flex;
+$justify-content: space-around;
+$padding-bottom: 100px;
+$font-size: 40px;
+
+.section-3{
+    background-color: $background-color;
+    display: $display;
+    justify-content: $justify-content;
+    padding-bottom: $padding-bottom;
+    font-size: $font-size;
+}
+
+/*Variables resultados*/
+
+$display: flex;
+$justify-items: right;
+$padding: 80px 100px;
+$color: #343f56;
+$font-size: 45px;
+$font-family: cursive;
+
+.resultados{
+
+    display: $display;
+    justify-items: $justify-items;
+    padding: $padding;
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+ }
+
+ /*Variables ejercicio*/
+$height: auto;
+$max-width: 100%;
+$vertical-align: top;
+
+ .ejercicio{
+    height: auto;
+    max-width: 100%;
+}
+
+/*Variables section-4*/
+$padding-bottom: 200px;
+$display: flex;
+$background-color: #865858;
+$width: auto;
+$height: 300px;
+
+.section-4{
+    padding-bottom: $padding-bottom;
+    display: $display;
+    background-color: $background-color;
+    width: $width;
+    height: $height;
+}
+
+/*Variables miContacto*/
+$display: flex;
+$flex-direction: row;
+$justify-content: left;
+
+.miContacto{
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
+/*Variables Contacto*/
+$color: white;
+$background-color: black;
+$font-size: 30px;
+$border-radius: 20px;
+$width: 300px;
+$height: 100px;
+$text-align: center;
+
+.Contacto{
+    color: $color;
+    background-color: $background-color;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    width: $width;
+    height: $height;
+    text-align: $text-align;
+}
+
+/*Variables formulario*/
+$display: flex;
+$font-size: 25px;
+$color: #f3f3f3;
+    
+.formulario{
+    display: $display;
+    font-size: $font-size;
+    color: $color;
+}
+
+
+
+/*Section-5-grid images*/
+
+.container-grid{
+    background-color: white;
+    display: grid;
+    height: 100vh;
+    padding-bottom: 200px;
+    grid-template-columns: 300px 1fr 200px;
+    grid-template-rows:1 fr ;
+    row-gap: 15px;
+    column-gap: 10px;
+    grid-template-areas: "img-1  nuestra-Sede img-2"
+    "img-1  nuestra-Sede img-2"
+    "covid-19 img-3 img-2";
+    }
+
+    .img-1{
+        background-color:#fb9300 ;
+        grid-area: img-1;
+     }
+     
+     .img-2{
+        background-color: #022e57 ;
+        grid-area: img-2;
+     }
+     
+     
+     .img-3{
+        background-color:#c5772e ;
+        grid-area: img-3;
+     }
+     
+     .nuestra-Sede{
+        background-color: #39a6a3;
+        grid-area: nuestra-Sede
+        
+     }
+     
+     .covid-19{
+        background-color:#d5dbb3 ;
+        grid-area: covid-19;
+     }
+     
+/*Variables section-6 */
+$margin:auto;
+$background-color: #343f56;
+
+.section-6{
+    background-color: $background-color;
+    margin: $margin;
+
+}
+
+/*Variables iconos-redes*/
+$display:flex;
+$margin:0px;
+$padding:0;
+$width:50px;
+$padding-bottom:10px;
+
+
+.iconos-redes{display: $display;
+    margin: $margin;
+    padding:$padding;
+    padding-bottom:$padding-bottom;
+    width: $width;
+    background-color: $background-color;
+    
+ }
+
+ /*Variables whathsapp*/
+$display: flex;
+$flex-direction: flex-end;
+$justify-content: center;
+$margin:0;
+$padding:0;
+$width:45px;
+$float:right ;
+$margin-bottom: 1 em;
+$margin-right:1 em;
+
+.icono-wpp{
+    display: $display;
+    flex-direction:$flex-direction;
+    justify-content: $justify-content;
+    margin: $margin;
+    padding: $padding;
+    width: $width;
+    margin-bottom: $margin-bottom;
+    float: $float;
+    margin-right: $margin-right;
+}

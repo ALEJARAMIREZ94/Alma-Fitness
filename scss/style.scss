@@ -1,0 +1,421 @@
+
+@import 'base/mixin';
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Variables titulo-h1*/
+$display: flex;
+$padding: 100px !important;
+$transform: skewX(20deg);
+$color:darkred;
+$text-align :left;
+$text-transform:uppercase;
+$font-family:cursive;
+$font-size:90px;
+$height:80px;
+
+h1{
+    padding: $padding;
+    color: $color;
+    text-align: $text-align;
+    font-size: $font-size;
+    text-transform: $text-transform;
+    font-family: $font-family;
+    height: $height;
+}
+
+/*Variables titulo-h2*/
+$font-size: 50px;
+$margin: 5px 130px 0px;
+$font-family: cursive;
+$display: flex;
+$justify-content: left;
+$padding: 0 50px;
+$transform: skewX(20deg);
+
+h2{
+    font-size: $font-size;
+    margin: $margin;
+    font-family: $font-family;
+    display: $display;
+    justify-content: $justify-content;
+    padding: $padding;
+    transform: $transform;
+    
+}
+    
+
+/*Variables parrrafo*/
+$display:flex;
+$padding-bottom: 200px; 
+$font-size: 50px;
+$font-family: 'EB Garamond', serif ;
+$font-style: oblique ;
+$background-color: gray;    
+$padding: 20px 10px 10px ;
+$border-radius:5px;
+
+.parrafo{
+   display:$display;
+   padding-bottom: $padding-bottom; 
+   font-size: $font-size;
+   font-family: $font-family ;
+   font-style: $font-style ;
+   background-color: $background-color;    
+   padding:  $padding;
+   border-radius: $border-radius;
+}
+
+/*Variables section-2*/
+$background-size: contain;
+$display: flex;
+$justify-content: center;
+$background-color:  #E1E5EA;
+$padding-bottom: 50px;
+
+.section-2{
+    background-size: $background-size;
+    display: $display;
+    justify-content: $justify-content;
+    background-color: $background-color;
+    padding-bottom: $padding-bottom;
+}
+/*Variabes frase-1*/
+$display: flex;
+$justify-content: left;
+$font-size: 40px;
+$font-weight: bold;
+$margin: 50px;
+$color: #B31B1B;
+$font-family: cursive;
+
+.frase-1{
+    display: $display;
+    justify-content: $justify-content;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    margin: $margin;
+    color: $color;
+    font-family: $font-family;
+}
+
+/*Variables frase-2*/
+$display: flex;
+$margin: 50px;
+$font-size: 25px;
+$font-family: cursive;
+$color: black;
+
+.frase-2{
+    display: $display;
+    margin: $margin;
+    font-size: $font-size;
+    font-family: $font-family;
+    color:$color;
+}
+
+/*Variables iframe*/
+$width:78vh;
+$height:75%;
+$justify-content: center;
+$display : flex;
+$margin-top: 100px; 
+
+iframe{
+    width:$width;
+    height:$height;
+    justify-content: $justify-content;
+    display : $display;
+    margin-top: $margin-top; 
+    margin-left: 70px;
+    
+}
+
+/*Variables sc-3 resultados*/
+
+$display: flex;
+$justify-items: right;
+$padding: 80px 100px;
+$color: #343f56;
+$font-size: 45px;
+$font-family: cursive;
+
+.resultados{
+
+    display: $display;
+    justify-items: $justify-items;
+    padding: $padding;
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+    flex-wrap: wrap;
+ }
+
+ /*Variables yoga*/
+$height: auto;
+$max-width: 100%;
+$vertical-align: top;
+
+ .yoga {
+    height: auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/*Variables section-4*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$padding-bottom: 200px;
+$display: flex;
+$background-color: #A7BBC7;
+$width: auto;
+$height: 650px;
+
+.section-4 {
+    padding-bottom: $padding-bottom;
+    display: $display;
+    background-color: $background-color;
+    width: $width;
+    height: $height;
+    flex-wrap: wrap;
+}
+
+
+
+
+/*Variables formulario*/
+$display: flex;
+*{
+    
+    box-sizing: border-box;
+}
+
+
+.form-register{
+    width: 400px;
+    background-color: #24303c;
+    padding: 30px;
+    margin-top: 30px;
+    margin-left: 50px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;  
+}
+
+.form-register {
+    h4 {font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+
+.controls {
+    width: 100%;
+    background-color: #24303c;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: 'calibri';
+    font-size: 18px;
+          
+   
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px; 
+    line-height: 40px;   
+
+    }
+
+
+
+.form-register a{
+    color: white;
+    text-decoration: none;  
+    }
+
+
+.form-register
+    a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+
+
+
+.form-register{
+    .botons{
+        width: 100%;
+        background-color:#1f53c5 ;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+    }
+}
+
+/*testimonios*/
+.testimonios{
+    display: flex;
+    margin: 45px;
+    position: relative;
+    left: 80px;
+    bottom: 15px;
+    width: 50%;
+    flex-wrap: wrap;
+    
+
+ }
+
+ .list-group{
+     display: flex;
+     flex-wrap: wrap;
+     ;
+ }
+ 
+ 
+
+
+
+/*Section-5-grid images*/
+
+
+.container-img{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: #DDDDDD;
+    border:rounded-top;
+    }
+ 
+    .galeria-image{
+        width: 705px;
+        height: 300px;
+        margin-bottom :25px; 
+        object-fit: cover;
+        flex-wrap: wrap;
+    }
+
+    .list-group-item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .covid-19{
+        position: float;
+        float: right;
+        width: 705px;
+       height: 300px;
+       object-fit: cover;
+       font-size: 35px;
+       padding-left: 10px;
+       flex-wrap: wrap;
+       font-family:cursive;
+       
+    }
+ 
+
+
+/*Variables section-6*/
+$margin:auto;
+$background-color:  #687980;
+
+.section-6{
+    background-color: $background-color;
+    margin: $margin;
+    
+}
+
+.encabezado{ text-transform:uppercase;
+}
+
+
+/*Variables iconos-redes*/
+
+$margin:10px;
+$padding:0;
+$width:50px;
+$padding-bottom:3px;
+$display:flex;
+
+
+.iconos-redes{
+    margin: $margin;
+    padding:$padding;
+    padding-bottom:$padding-bottom;
+    width: $width;
+    background-color: $background-color;
+    
+    
+ }
+
+ /*Variables whathsapp*/
+$position: float;
+$width:60px;
+
+
+.icono-wpp{
+    position: $position;
+    height:60px;
+    margin-bottom: 20px;
+    float:right; 
+    width: $width;
+    
+    
+}
+
+/*media querties*/
+
+@media only screen and (min-width:960px){
+ body{  flex-wrap : wrap;
+        width : 100%;
+}
+}
+
+@media only screen and (max-width:400px){
+ body {   flex-wrap: wrap;
+        width: 50%;
+}
+}
+
+
+ 
+
+
+
+
+ 
+
+  
+   
+
+    
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+

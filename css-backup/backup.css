@@ -1,0 +1,283 @@
+* {margin: 0;
+    padding: 0;
+    border: 0;
+ 
+ }
+ 
+ 
+ /* Links */
+ a{   text-decoration: none;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     align-content: center;
+     margin-right:  15px;
+     color: white;
+     margin: 5x;
+     font-family: 'EB Garamond', serif;
+     font-weight: bold;  
+     font-size: 25px;
+     display: block;         
+ }
+ 
+ /* flex-box */
+ 
+ .navegacion{
+    display: flex;
+    justify-content: flex-end;
+ }
+ 
+ 
+ .navegacion a:hover{
+    color: darkred !important ;   
+    
+ }
+ 
+ 
+ ul{list-style:none;
+ display: inline;
+ margin: 2px ;
+ }
+ 
+ li{ text-decoration: none;
+    
+    display: inline;
+ 
+ }
+ 
+ 
+ /* sc-1 */
+ 
+ 
+ .titulo h1{
+    display: flex;
+    justify-content: left;
+    padding: 0 50px;
+    transform: skewX(20deg);  
+ }
+ 
+ h1{padding: 100px !important;
+    color: darkred;
+    text-align: left;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-family: cursive;
+    height: 80px;
+ }
+ 
+ .inferior{
+    font-size: 50px;
+ 
+    margin: 5px 130px 0px;
+    font-family: cursive;
+    border-radius: 20px;
+    display: flex;
+    justify-content: left;
+    padding: 0 50px;
+    transform: skewX(20deg);
+    
+ }
+ 
+ 
+ 
+    
+ .parrafo{   
+    display:flex;
+    
+    
+    padding-bottom: 100px; 
+    font-size: 50px;
+    
+    font-family: 'EB Garamond', serif ;
+    font-style: oblique ;
+    background-color: ghostwhite;    
+    
+    
+    padding: 20px 10px 10px ;
+ }
+ 
+ 
+ /* Section-2 */
+ .section-2{background-size: contain;
+    display: flex;
+    justify-content: center;
+    background-color: #FBCEB1;
+    padding-bottom: 50px;
+     
+ }
+ 
+ 
+ .frase-1{
+    display: flex;
+    justify-content: left;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px;
+    color: #B31B1B;
+    font-family: cursive;
+ }
+ 
+ .frase-2{
+    display: flex;
+    margin: 50px;
+    font-size: 25px;
+    font-family: cursive;
+    color: black;
+ }
+ 
+ 
+ iframe{
+    width:78vh;
+    height:75%;
+    justify-content: center;
+    display : flex;
+    margin-top: 100px; 
+ }
+ .btn{ 
+    display: flex;
+    justify-content: flex-end ;
+    margin-bottom: 200px;
+    width: 200px;
+ }
+ 
+ 
+ 
+ 
+ /*Section-3*/
+ 
+ .section-3{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    font-size: 40px;
+ }
+ 
+ 
+ .resultados{
+    
+    display: flex;
+    justify-items: right;
+    padding: 100px 100px;
+    color: #343f56;
+    font-size: 100%;
+    font-family: cursive;
+ }
+ 
+ .ejercicio{
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+ }
+ 
+ .mi-Boton a{
+    display: flex;/*no funciona*/
+    color: teal;
+    font-family: cursive; 
+ }
+ 
+ 
+ 
+ 
+ 
+ /* Section-4 */ /*iria el formulario*/
+ 
+ .section-4{
+    padding-bottom: 200px;
+    display: flex;
+    background-color: #865858;
+    width: auto;
+    height: 300px;
+ 
+ }
+ .miContacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+ }
+ 
+ 
+ .Contacto{
+    color: white;
+    background-color: black;
+    font-size: 30px;
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+ }  
+ 
+ .formulario{
+    display: flex;
+    font-size: 25px;
+    color: #f3f3f3;
+ }
+ 
+ .contacto{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+ }
+ 
+ /* Sección-5 */ /*un poco mas de nosotros*/
+ 
+ .container-grid{
+    background-color: white;
+    display: grid;
+    height: 100vh;
+    padding-bottom: 200px;
+    grid-template-columns: 300px 1fr 200px;
+    grid-template-rows:1 fr ;
+    row-gap: 15px;
+    column-gap: 10px;
+    grid-template-areas: "img-1  nuestra-Sede img-2"
+    "img-1  nuestra-Sede img-2"
+    "covid-19 img-3 img-2";
+    
+ 
+ }
+ 
+ .img-1{
+    background-color:#fb9300 ;
+    grid-area: img-1;
+ }
+ 
+ .img-2{
+    background-color: #022e57 ;
+    grid-area: img-2;
+ }
+ 
+ 
+ .img-3{
+    background-color:#c5772e ;
+    grid-area: img-3;
+ }
+ 
+ .nuestra-Sede{
+    background-color: #39a6a3;
+    grid-area: nuestra-Sede
+    
+ }
+ 
+ .covid-19{
+    background-color:#d5dbb3 ;
+    grid-area: covid-19;
+ }
+ 
+ 
+ /* .section-6 */
+ 
+ .iconos-redes{display: flex;
+    margin: 0;
+    padding-bottom: 5px;
+    width: 50px;
+ }
+  
+ /* responsive:media queries */
+    /* media queries 
+ @media only screen and(width min:320px max:480px)/*telefonos
+ 
+ @media only screen and(width min:481px max:1100px)/*tablets
+ 
+ @media only screen and(width min:1200px ) desktop*/
+ 

@@ -1,0 +1,209 @@
+/*funciones, variables y mixins que emplearemos en el resto de ficheros*/
+/*Variables titulo-h1*/
+h1 {
+  padding: 100px !important;
+  color: darkred;
+  text-align: left;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-family: cursive;
+  height: 80px;
+}
+
+/*Variables titulo-h2*/
+h2 {
+  font-size: 50px;
+  margin: 5px 130px 0px;
+  font-family: cursive;
+  border-radius: 20px;
+  display: flex;
+  justify-content: left;
+  padding: 0 50px;
+  transform: skewX(20deg);
+}
+
+/*Variables parrrafo*/
+.parrafo {
+  display: flex;
+  padding-bottom: 200px;
+  font-size: 50px;
+  font-family: "EB Garamond", serif;
+  font-style: oblique;
+  background-color: gray;
+  padding: 20px 20px 10px 10px;
+  border-radius: 20px;
+}
+
+/*Variables section-2*/
+.section-2 {
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  background-color: #FBCEB1;
+  padding-bottom: 50px;
+}
+
+/*Variabes frase-1*/
+.frase-1 {
+  display: flex;
+  justify-content: left;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 50px;
+  color: #B31B1B;
+  font-family: cursive;
+}
+
+/*Variables frase-2*/
+.frase-2 {
+  display: flex;
+  margin: 50px;
+  font-size: 25px;
+  font-family: cursive;
+  color: black;
+}
+
+/*Variables iframe*/
+iframe {
+  width: 78vh;
+  height: 75%;
+  justify-content: center;
+  display: flex;
+  margin-top: 100px;
+}
+
+/*Variables dropdown*/
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 200px;
+  width: 200px;
+}
+
+/*Variables section-3*/
+.section-3 {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+  font-size: 40px;
+}
+
+/*Variables resultados*/
+.resultados {
+  display: flex;
+  justify-items: right;
+  padding: 80px 100px;
+  color: #343f56;
+  font-size: 45px;
+  font-family: cursive;
+}
+
+/*Variables ejercicio*/
+.ejercicio {
+  height: auto;
+  max-width: 100%;
+}
+
+/*Variables section-4*/
+.section-4 {
+  padding-bottom: 200px;
+  display: flex;
+  background-color: #865858;
+  width: auto;
+  height: 300px;
+}
+
+/*Variables miContacto*/
+.miContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+/*Variables Contacto*/
+.Contacto {
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  border-radius: 20px;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+}
+
+/*Variables formulario*/
+.formulario {
+  display: flex;
+  font-size: 25px;
+  color: #f3f3f3;
+}
+
+/*Section-5-grid images*/
+.container-grid {
+  background-color: white;
+  display: grid;
+  height: 100vh;
+  padding-bottom: 200px;
+  grid-template-columns: 300px 1fr 200px;
+  grid-template-rows: 1 fr;
+  row-gap: 15px;
+  column-gap: 10px;
+  grid-template-areas: "img-1  nuestra-Sede img-2" "img-1  nuestra-Sede img-2" "covid-19 img-3 img-2";
+}
+
+.img-1 {
+  background-color: #fb9300;
+  grid-area: img-1;
+}
+
+.img-2 {
+  background-color: #022e57;
+  grid-area: img-2;
+}
+
+.img-3 {
+  background-color: #c5772e;
+  grid-area: img-3;
+}
+
+.nuestra-Sede {
+  background-color: #39a6a3;
+  grid-area: nuestra-Sede;
+}
+
+.covid-19 {
+  background-color: #d5dbb3;
+  grid-area: covid-19;
+}
+
+/*Variables section-6 */
+.section-6 {
+  background-color: #343f56;
+  margin: auto;
+}
+
+/*Variables iconos-redes*/
+.iconos-redes {
+  display: flex;
+  margin: 0px;
+  padding: 0;
+  padding-bottom: 10px;
+  width: 50px;
+  background-color: #343f56;
+}
+
+/*Variables whathsapp*/
+.icono-wpp {
+  display: flex;
+  flex-direction: flex-end;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 45px;
+  margin-bottom: 1 em;
+  float: right;
+  margin-right: 1 em;
+}
+
+/*# sourceMappingURL=style.css.map */

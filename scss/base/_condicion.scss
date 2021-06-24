@@ -1,0 +1,10 @@
+@mixin ($colorIf) {
+    background-color:$colorIf;
+
+    @if $colorIf ==orange {
+        border: 1px solid
+    } @else {
+        border:4px solid
+    }
+}
+

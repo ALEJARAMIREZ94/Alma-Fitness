@@ -1,0 +1,49 @@
+/*mixin-form*/
+@mixin form ($background-color, $color){
+    padding: 30px;
+    margin-left: 800px ;
+    margin-top: 20px;
+    border-radius: 4px;
+    color: white;
+}
+
+@mixin condicional($color){
+    background-color: black;
+    color: white;
+    @if $color == green{
+}     @else {
+    background-color: blue;
+}
+}
+/*mixin-boton4sc*/
+@mixin botons($background-color, $color){
+    botons{
+        width: 100%;
+        background-color:$background-color;
+        border: none;
+        padding: 12px;
+        color: $color;
+        margin: 16px 0;
+        font-size: 16px;
+
+        @if $color ==white{
+            background-color: #1f53c5;
+        } @else {background-color: white;
+        }
+}
+}
+
+
+
+
+/*posicion*/
+@mixin position {position:relative;
+                 top:10px;
+                 bottom: -10px;
+                 right: 10px;
+                 left: -10px;
+    
+}
+
+
+
