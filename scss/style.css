@@ -4,9 +4,10 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/*Variables titulo-h1*/
+/* Variables titulo-h1 */
 h1 {
   padding: 100px !important;
   color: darkred;
@@ -17,7 +18,7 @@ h1 {
   height: 80px;
 }
 
-/*Variables titulo-h2*/
+/* Variables titulo-h2 */
 h2 {
   font-size: 50px;
   margin: 5px 130px 0px;
@@ -28,7 +29,15 @@ h2 {
   transform: skewX(20deg);
 }
 
-/*Variables parrrafo*/
+.nav-link:hover {
+  color: darkred;
+}
+
+.carrusel {
+  opacity: 95%;
+}
+
+/* Variables parrrafo */
 .parrafo {
   display: flex;
   padding-bottom: 200px;
@@ -40,7 +49,7 @@ h2 {
   border-radius: 5px;
 }
 
-/*Variables section-2*/
+/* Variables section-2 */
 .section-2 {
   background-size: contain;
   display: flex;
@@ -49,7 +58,7 @@ h2 {
   padding-bottom: 50px;
 }
 
-/*Variabes frase-1*/
+/* Variabes frase-1 */
 .frase-1 {
   display: flex;
   justify-content: left;
@@ -60,7 +69,7 @@ h2 {
   font-family: cursive;
 }
 
-/*Variables frase-2*/
+/* Variables frase-2 */
 .frase-2 {
   display: flex;
   margin: 50px;
@@ -69,7 +78,7 @@ h2 {
   color: black;
 }
 
-/*Variables iframe*/
+/* Variables iframe */
 iframe {
   width: 78vh;
   height: 75%;
@@ -79,11 +88,11 @@ iframe {
   margin-left: 70px;
 }
 
-/*Variables sc-3 resultados*/
+/* Variables sc-3 resultados */
 .resultados {
   display: flex;
   justify-items: right;
-  padding: 80px 100px;
+  padding: 80px 70px;
   color: #343f56;
   font-size: 45px;
   font-family: cursive;
@@ -93,11 +102,13 @@ iframe {
 /*Variables yoga*/
 .yoga {
   height: auto;
+  opacity: 80%;
   display: flex;
   flex-wrap: wrap;
+  width: 750px;
 }
 
-/*Variables section-4*/
+/* Variables section-4 */
 * {
   margin: 0;
   padding: 0;
@@ -113,11 +124,7 @@ iframe {
   flex-wrap: wrap;
 }
 
-/*Variables formulario*/
-* {
-  box-sizing: border-box;
-}
-
+/* Variables formulario */
 .form-register {
   width: 400px;
   background-color: #24303c;
@@ -174,12 +181,12 @@ iframe {
   font-size: 16px;
 }
 
-/*testimonios*/
+/* testimonios */
 .testimonios {
   display: flex;
-  margin: 45px;
+  margin-top: 45px;
   position: relative;
-  left: 80px;
+  left: 200px;
   bottom: 15px;
   width: 50%;
   flex-wrap: wrap;
@@ -190,7 +197,7 @@ iframe {
   flex-wrap: wrap;
 }
 
-/*Section-5-grid images*/
+/* Section-5-grid images */
 .container-img {
   display: flex;
   width: 100%;
@@ -206,6 +213,7 @@ iframe {
   margin-bottom: 25px;
   object-fit: cover;
   flex-wrap: wrap;
+  opacity: 85%;
 }
 
 .list-group-item {
@@ -216,41 +224,81 @@ iframe {
 .covid-19 {
   position: float;
   float: right;
-  width: 705px;
+  width: 700px;
   height: 300px;
   object-fit: cover;
+  font-size: 35px;
+  flex-wrap: wrap;
+  font-family: cursive;
+  font-weight: bolder;
+  opacity: 85%;
+}
+
+.covid {
+  position: float;
+  float: right;
+  width: 705px;
   font-size: 35px;
   padding-left: 10px;
   flex-wrap: wrap;
   font-family: cursive;
+  font-weight: bolder;
 }
 
-/*Variables section-6*/
-.section-6 {
+/* Variables section-6  */
+.challenges {
+  margin: 50px;
+}
+
+.desafios {
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+}
+
+/* Variables section-7 */
+.section-7 {
   background-color: #687980;
   margin: auto;
 }
 
 .encabezado {
   text-transform: uppercase;
+  font-weight: bold;
 }
 
-/*Variables iconos-redes*/
+.card-text {
+  font-style: oblique;
+  background-color: #EAE2B6;
+}
+
+.card-img {
+  opacity: 85%;
+}
+
+/*Variables sc 7-iconos-redes*/
+.logos {
+  width: 100%;
+  justify-content: space-around;
+  background-color: #D1D9D9;
+  display: flex;
+}
+
 .iconos-redes {
-  margin: 10px;
-  padding: 0;
-  padding-bottom: 3px;
   width: 50px;
-  background-color: #687980;
+  justify-content: space-around;
+  margin: 30px;
 }
 
 /*Variables whathsapp*/
 .icono-wpp {
   position: float;
-  height: 60px;
-  margin-bottom: 20px;
   float: right;
   width: 60px;
+  margin: 5px 30px;
 }
 
 /*media querties*/
@@ -264,6 +312,15 @@ iframe {
   body {
     flex-wrap: wrap;
     width: 50%;
+  }
+  body .titulo {
+    width: 50%;
+  }
+  body .yoga {
+    display: none;
+  }
+  body .testimonios {
+    display: none;
   }
 }
 
