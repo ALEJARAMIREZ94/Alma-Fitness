@@ -1,22 +1,40 @@
 
 @import 'base/mixin';
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
 
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     
 }
 
+.contenedor {
+    background-color: #CE97B0;
+}
+
 .navbar-light .navbar-nav .nav-link:hover {
-    color: darkred;
+    background-color: rgba(36, 48, 60, 0.3);
+    color: white;
     text-decoration: underline;
+}
+
+.header {
+    width: 100%;
+    margin: auto;
+}
+
+nav.fixed-top {
+    background-color: #becceb;
+    width: 100%;
+   div{
+       width: 1200px;
+   }
 }
 
 
 
 /* Variables titulo-h1 */
+
 $display: flex;
 $padding: 100px !important;
 $transform: skewX(20deg);
@@ -39,6 +57,7 @@ h1{
 }
 
 /* Variables titulo-h2 */
+
 $font-size: 50px;
 $margin: 5px 130px 0px;
 $display: flex;
@@ -65,6 +84,7 @@ h2 {
 
 
 /* Variables parrrafo */
+
 $display:flex;
 $padding-bottom: 200px; 
 $font-size: 50px;
@@ -86,6 +106,7 @@ $border-radius:5px;
 }
 
 /* Variables section-2 */
+
 $background-size: contain;
 $display: flex;
 $justify-content: center;
@@ -100,13 +121,14 @@ $padding-bottom: 50px;
     padding-bottom: $padding-bottom;
 }
 /* Variabes frase-1 */
+
 $display: flex;
 $justify-content: left;
 $font-size: 40px;
 $font-weight: bold;
 $margin: 50px;
 $color: #B31B1B;
-$font-family: cursive;
+
 
 .frase-1{
     display: $display;
@@ -115,25 +137,25 @@ $font-family: cursive;
     font-weight: $font-weight;
     margin: $margin;
     color: $color;
-    font-family: $font-family;
+    font-family: $font-family-cursive;
 }
 
 /* Variables frase-2 */
 $display: flex;
 $margin: 50px;
 $font-size: 25px;
-$font-family: cursive;
 $color: black;
 
 .frase-2{
     display: $display;
     margin: $margin;
     font-size: $font-size;
-    font-family: $font-family;
+    font-family: $font-family-cursive;
     color:$color;
 }
 
 /* Variables iframe */
+
 $width:78vh;
 $height:75%;
 $justify-content: center;
@@ -146,7 +168,7 @@ iframe{
     justify-content: $justify-content;
     display : $display;
     margin-top: $margin-top; 
-    margin-left: 70px;
+    margin-left: 61px;
     
 }
 
@@ -157,7 +179,12 @@ $justify-items: right;
 $padding: 80px 70px;
 $color: #343f56;
 $font-size: 45px;
-$font-family: cursive;
+
+.row>* {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 .resultados{
     
@@ -166,11 +193,12 @@ $font-family: cursive;
     padding: $padding;
     color: $color;
     font-size: $font-size;
-    font-family: $font-family;
+    font-family: $font-family-cursive;
     flex-wrap: wrap;
 }
 
 /*Variables yoga*/
+
 $height: auto;
 $vertical-align: top;
 
@@ -179,7 +207,7 @@ $vertical-align: top;
     opacity: 80%;
     display: flex;
     flex-wrap: wrap;
-    width: 750px;
+    width: 100%;
 }
 
 
@@ -187,11 +215,7 @@ $vertical-align: top;
 
 
 /* Variables section-4 */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 $padding-bottom: 200px;
 $display: flex;
 $background-color: #A7BBC7;
@@ -199,12 +223,14 @@ $width: auto;
 $height: 650px;
 
 .section-4 {
-    padding-bottom: $padding-bottom;
     display: $display;
     background-color: $background-color;
     width: $width;
     height: $height;
-    flex-wrap: wrap;
+
+    article{
+        margin: 30px;
+    }
 }
 
 
@@ -213,18 +239,19 @@ $height: 650px;
 /* Variables formulario */
 $display: flex;
 
+.registro{
+    padding: 20px;
+}
+
 
 
 .form-register{
-    width: 400px;
-    background-color: #24303c;
-    padding: 30px;
-    margin-top: 30px;
-    margin-left: 50px;
+    background-color: rgb(36, 48, 60);
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;  
+    width: 50%;
 }
 
 .form-register {
@@ -238,7 +265,7 @@ $display: flex;
     background-color: #24303c;
     padding: 5px;
     border-radius: 4px;
-    margin: 20px;
+    // margin: 20px;
     margin-bottom: 16px;
     border: 1px solid #1f53c5;
     font-family: 'calibri';
@@ -285,12 +312,14 @@ a:hover{
 /* testimonios */
 .testimonios{
     display: flex;
-    margin-top: 45px;
-    position: relative;
-    left: 200px;
-    bottom: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    // position: relative;
+    // left: 200px;
+    // bottom: 15px;
     width: 50%;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     
 }
 
@@ -314,13 +343,12 @@ a:hover{
     margin: auto;
     background-color: #DDDDDD;
     border:rounded-top;
+    background-color: #24303c;
     
 }
 
 .galeria-image{
-    width: 705px;
     height: 300px;
-    margin-bottom :25px; 
     object-fit: cover;
     flex-wrap: wrap;
     opacity: 85%;
@@ -332,35 +360,30 @@ a:hover{
     flex-wrap: wrap;
 }
 
-.covid-19{
-    position: float;
-    float: right;
-    width: 700px;
-    height: 300px;
-    object-fit: cover;
-    font-size: 35px;
-    flex-wrap: wrap;
-    font-family:cursive;
-    font-weight: bolder;
-    opacity: 85%;
-}
+
 
 .covid{
+    color: white;
     position: float;
     float: right;
-    width: 705px;
     font-size: 35px;
     padding-left: 10px;
     flex-wrap: wrap;
-    font-family:cursive;
+    font-family:$font-family-cursive;
     font-weight: bolder;
     
 }
 
 /* Variables section-6  */
 .challenges{
-    margin: 50px;
+    margin: 50px 0px;
     
+}
+
+.desafios-contenedor{
+    margin-right: 0px;
+    margin-left: 0px;
+
 }
 
 .desafios {
@@ -407,6 +430,14 @@ $padding:0;
 $width:50px;
 $padding-bottom:3px;
 
+a.social-networks {
+    color: #000000;
+    font-size: xx-large;
+}
+a.social-networks:hover {
+    color: red;
+    transform: rotate(60deg);
+}
 
 .logos {
     width: 100%;
@@ -430,7 +461,11 @@ $padding-bottom:3px;
 $position: float;
 $width:60px;
 
-
+.wpp{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
 
 .icono-wpp{
     position: $position;
@@ -444,11 +479,19 @@ $width:60px;
 
 /*media querties*/
 
-@media only screen and (min-width:960px){
-    body{  flex-wrap : wrap;
-        width : 100%;
-    }
+@media only screen and (min-width:1400px) {
+ nav, main{
+    width: 1200px;
+    flex-wrap: wrap;
+    margin: auto;
 }
+}
+
+// @media only screen and (min-width:960px){
+//     body{  flex-wrap : wrap;
+//         width : 100%;
+//     }
+// }
 
 @media only screen and (max-width:600px){
     body {   
@@ -470,6 +513,8 @@ $width:60px;
         
     }
 }
+
+
 
 
 

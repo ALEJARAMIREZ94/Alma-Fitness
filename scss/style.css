@@ -2,15 +2,32 @@
 /*mixin-boton4sc*/
 /*posicion*/
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
+.contenedor {
+  background-color: #CE97B0;
+}
+
 .navbar-light .navbar-nav .nav-link:hover {
-  color: darkred;
+  background-color: rgba(36, 48, 60, 0.3);
+  color: white;
   text-decoration: underline;
+}
+
+.header {
+  width: 100%;
+  margin: auto;
+}
+
+nav.fixed-top {
+  background-color: #becceb;
+  width: 100%;
+}
+nav.fixed-top div {
+  width: 1200px;
 }
 
 /* Variables titulo-h1 */
@@ -87,10 +104,15 @@ iframe {
   justify-content: center;
   display: flex;
   margin-top: 100px;
-  margin-left: 70px;
+  margin-left: 61px;
 }
 
 /* Variables sc-3 resultados */
+.row > * {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .resultados {
   display: flex;
   justify-items: right;
@@ -107,36 +129,32 @@ iframe {
   opacity: 80%;
   display: flex;
   flex-wrap: wrap;
-  width: 750px;
+  width: 100%;
 }
 
 /* Variables section-4 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .section-4 {
-  padding-bottom: 200px;
   display: flex;
   background-color: #A7BBC7;
   width: auto;
   height: 650px;
-  flex-wrap: wrap;
+}
+.section-4 article {
+  margin: 30px;
 }
 
 /* Variables formulario */
+.registro {
+  padding: 20px;
+}
+
 .form-register {
-  width: 400px;
   background-color: #24303c;
-  padding: 30px;
-  margin-top: 30px;
-  margin-left: 50px;
   border-radius: 4px;
   font-family: "calibri";
   color: white;
   box-shadow: 7px 13px 37px #000;
+  width: 50%;
 }
 
 .form-register h4 {
@@ -149,7 +167,6 @@ iframe {
   background-color: #24303c;
   padding: 5px;
   border-radius: 4px;
-  margin: 20px;
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
   font-family: "calibri";
@@ -186,12 +203,10 @@ iframe {
 /* testimonios */
 .testimonios {
   display: flex;
-  margin-top: 45px;
-  position: relative;
-  left: 200px;
-  bottom: 15px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
   width: 50%;
-  flex-wrap: wrap;
 }
 
 .list-group {
@@ -207,12 +222,11 @@ iframe {
   margin: auto;
   background-color: #DDDDDD;
   border: rounded-top;
+  background-color: #24303c;
 }
 
 .galeria-image {
-  width: 705px;
   height: 300px;
-  margin-bottom: 25px;
   object-fit: cover;
   flex-wrap: wrap;
   opacity: 85%;
@@ -223,23 +237,10 @@ iframe {
   flex-wrap: wrap;
 }
 
-.covid-19 {
-  position: float;
-  float: right;
-  width: 700px;
-  height: 300px;
-  object-fit: cover;
-  font-size: 35px;
-  flex-wrap: wrap;
-  font-family: cursive;
-  font-weight: bolder;
-  opacity: 85%;
-}
-
 .covid {
+  color: white;
   position: float;
   float: right;
-  width: 705px;
   font-size: 35px;
   padding-left: 10px;
   flex-wrap: wrap;
@@ -249,7 +250,12 @@ iframe {
 
 /* Variables section-6  */
 .challenges {
-  margin: 50px;
+  margin: 50px 0px;
+}
+
+.desafios-contenedor {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .desafios {
@@ -282,6 +288,16 @@ iframe {
 }
 
 /*Variables sc 7-iconos-redes*/
+a.social-networks {
+  color: #000000;
+  font-size: xx-large;
+}
+
+a.social-networks:hover {
+  color: red;
+  transform: rotate(60deg);
+}
+
 .logos {
   width: 100%;
   justify-content: space-around;
@@ -296,6 +312,12 @@ iframe {
 }
 
 /*Variables whathsapp*/
+.wpp {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+
 .icono-wpp {
   position: float;
   float: right;
@@ -304,10 +326,11 @@ iframe {
 }
 
 /*media querties*/
-@media only screen and (min-width: 960px) {
-  body {
+@media only screen and (min-width: 1400px) {
+  nav, main {
+    width: 1200px;
     flex-wrap: wrap;
-    width: 100%;
+    margin: auto;
   }
 }
 @media only screen and (max-width: 600px) {
