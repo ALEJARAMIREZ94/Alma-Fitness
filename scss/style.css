@@ -1,10 +1,16 @@
 /*mixin-form*/
 /*mixin-boton4sc*/
 /*posicion*/
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: darkred;
+  text-decoration: underline;
 }
 
 /* Variables titulo-h1 */
@@ -27,10 +33,6 @@ h2 {
   justify-content: left;
   padding: 0 50px;
   transform: skewX(20deg);
-}
-
-.nav-link:hover {
-  color: darkred;
 }
 
 .carrusel {
@@ -308,10 +310,10 @@ iframe {
     width: 100%;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   body {
     flex-wrap: wrap;
-    width: 50%;
+    width: 100%;
   }
   body .titulo {
     width: 50%;

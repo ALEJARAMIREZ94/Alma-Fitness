@@ -1,11 +1,20 @@
 
 @import 'base/mixin';
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 }
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+
+
 
 /* Variables titulo-h1 */
 $display: flex;
@@ -14,7 +23,8 @@ $transform: skewX(20deg);
 $color:darkred;
 $text-align :left;
 $text-transform:uppercase;
-$font-family:cursive;
+$font-family-cursive:cursive;
+$font-family-garamond: 'EB Garamond', serif;
 $font-size:90px;
 $height:80px;
 
@@ -24,23 +34,22 @@ h1{
     text-align: $text-align;
     font-size: $font-size;
     text-transform: $text-transform;
-    font-family: $font-family;
+    font-family: $font-family-cursive;
     height: $height;
 }
 
 /* Variables titulo-h2 */
 $font-size: 50px;
 $margin: 5px 130px 0px;
-$font-family: cursive;
 $display: flex;
 $justify-content: left;
 $padding: 0 50px;
 $transform: skewX(20deg);
 
-h2{
+h2 {
     font-size: $font-size;
     margin: $margin;
-    font-family: $font-family;
+    font-family: $font-family-cursive;
     display: $display;
     justify-content: $justify-content;
     padding: $padding;
@@ -48,34 +57,32 @@ h2{
     
 }
 
-.nav-link:hover{
-color: darkred ;
-}
 
-.carrusel{
+
+.carrusel {
     opacity: 95%;
 }
-    
+
 
 /* Variables parrrafo */
 $display:flex;
 $padding-bottom: 200px; 
 $font-size: 50px;
-$font-family: 'EB Garamond', serif ;
+
 $font-style: oblique ;
 $background-color: gray;    
 $padding: 20px 10px 10px ;
 $border-radius:5px;
 
-.parrafo{
-   display:$display;
-   padding-bottom: $padding-bottom; 
-   font-size: $font-size;
-   font-family: $font-family ;
-   font-style: $font-style ;
-   background-color: $background-color;    
-   padding:  $padding;
-   border-radius: $border-radius;
+.parrafo {
+    display:$display;
+    padding-bottom: $padding-bottom; 
+    font-size: $font-size;
+    font-family: $font-family-garamond ;
+    font-style: $font-style ;
+    background-color: $background-color;    
+    padding:  $padding;
+    border-radius: $border-radius;
 }
 
 /* Variables section-2 */
@@ -153,7 +160,7 @@ $font-size: 45px;
 $font-family: cursive;
 
 .resultados{
-
+    
     display: $display;
     justify-items: $justify-items;
     padding: $padding;
@@ -161,13 +168,13 @@ $font-family: cursive;
     font-size: $font-size;
     font-family: $font-family;
     flex-wrap: wrap;
- }
+}
 
- /*Variables yoga*/
+/*Variables yoga*/
 $height: auto;
 $vertical-align: top;
 
- .yoga {
+.yoga {
     height: auto;
     opacity: 80%;
     display: flex;
@@ -236,8 +243,8 @@ $display: flex;
     border: 1px solid #1f53c5;
     font-family: 'calibri';
     font-size: 18px;
-          
-   
+    
+    
 }
 
 .form-register p{
@@ -245,22 +252,22 @@ $display: flex;
     text-align: center;
     font-size: 18px; 
     line-height: 40px;   
-
-    }
+    
+}
 
 
 
 .form-register a{
     color: white;
     text-decoration: none;  
-    }
+}
 
 
 .form-register
-    a:hover{
-        color: white;
-        text-decoration: underline;
-    }
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
 
 
 .form-register{
@@ -285,15 +292,15 @@ $display: flex;
     width: 50%;
     flex-wrap: wrap;
     
- }
+}
 
- .list-group{
-     display: flex;
-     flex-wrap: wrap;
-     ;
- }
- 
- 
+.list-group{
+    display: flex;
+    flex-wrap: wrap;
+    ;
+}
+
+
 
 
 
@@ -308,52 +315,52 @@ $display: flex;
     background-color: #DDDDDD;
     border:rounded-top;
     
-    }
- 
-    .galeria-image{
-        width: 705px;
-        height: 300px;
-        margin-bottom :25px; 
-        object-fit: cover;
-        flex-wrap: wrap;
-        opacity: 85%;
-       
-    }
+}
 
-    .list-group-item{
-        display: flex;
-        flex-wrap: wrap;
-    }
+.galeria-image{
+    width: 705px;
+    height: 300px;
+    margin-bottom :25px; 
+    object-fit: cover;
+    flex-wrap: wrap;
+    opacity: 85%;
+    
+}
 
-    .covid-19{
-        position: float;
-        float: right;
-        width: 700px;
-       height: 300px;
-       object-fit: cover;
-       font-size: 35px;
-       flex-wrap: wrap;
-       font-family:cursive;
-       font-weight: bolder;
-       opacity: 85%;
-    }
+.list-group-item{
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    .covid{
-        position: float;
-        float: right;
-        width: 705px;
-       font-size: 35px;
-       padding-left: 10px;
-       flex-wrap: wrap;
-       font-family:cursive;
-       font-weight: bolder;
-       
-    }
- 
+.covid-19{
+    position: float;
+    float: right;
+    width: 700px;
+    height: 300px;
+    object-fit: cover;
+    font-size: 35px;
+    flex-wrap: wrap;
+    font-family:cursive;
+    font-weight: bolder;
+    opacity: 85%;
+}
+
+.covid{
+    position: float;
+    float: right;
+    width: 705px;
+    font-size: 35px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+    font-family:cursive;
+    font-weight: bolder;
+    
+}
+
 /* Variables section-6  */
 .challenges{
     margin: 50px;
-
+    
 }
 
 .desafios {
@@ -361,10 +368,10 @@ $display: flex;
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 50px;
-    font-family: 'EB Garamond', serif;
+    font-family: $font-family-garamond;
     font-weight: bold;
-
-        
+    
+    
     
 }
 
@@ -380,7 +387,7 @@ $background-color:  #687980;
 }
 
 .encabezado{ text-transform:uppercase;
-            font-weight: bold;
+    font-weight: bold;
 }
 
 .card-text{
@@ -413,13 +420,13 @@ $padding-bottom:3px;
     width: 50px;
     justify-content: space-around;
     margin: 30px;
-   
-   
+    
+    
     
 }
- 
 
- /*Variables whathsapp*/
+
+/*Variables whathsapp*/
 $position: float;
 $width:60px;
 
@@ -438,52 +445,53 @@ $width:60px;
 /*media querties*/
 
 @media only screen and (min-width:960px){
- body{  flex-wrap : wrap;
+    body{  flex-wrap : wrap;
         width : 100%;
-}
-}
-
-@media only screen and (max-width:400px){
- body {   flex-wrap: wrap;
-        width: 50%;
-
-
-.titulo{
-    width: 50%;
-}
-.yoga{
-    display: none;
+    }
 }
 
-.testimonios{
-    display: none;
-}
-
+@media only screen and (max-width:600px){
+    body {   
+        flex-wrap: wrap;
+        width: 100%;
         
+        
+        .titulo{
+            width: 50%;
+        }
+        .yoga{
+            display: none;
+        }
+        
+        .testimonios{
+            display: none;
+        }
+        
+        
+    }
 }
-}
-
-
- 
-
-
-
-
- 
-
-  
-   
-
-    
 
 
 
 
 
 
- 
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
