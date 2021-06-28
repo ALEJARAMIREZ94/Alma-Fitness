@@ -7,13 +7,9 @@
   box-sizing: border-box;
 }
 
-.contenedor {
-  background-color: #CE97B0;
-}
-
 .navbar-light .navbar-nav .nav-link:hover {
   background-color: rgba(36, 48, 60, 0.3);
-  color: white;
+  color: #ffffff;
   text-decoration: underline;
 }
 
@@ -63,9 +59,14 @@ h2 {
   font-size: 50px;
   font-family: "EB Garamond", serif;
   font-style: oblique;
-  background-color: gray;
+  background-color: #808080;
   padding: 20px 10px 10px;
   border-radius: 5px;
+}
+
+.contenedor-main {
+  width: 100%;
+  margin: auto;
 }
 
 /* Variables section-2 */
@@ -287,10 +288,16 @@ iframe {
   opacity: 85%;
 }
 
-/*Variables sc 7-iconos-redes*/
+/*Variables footer-iconos-redes*/
+.contenedor-footer {
+  width: 100%;
+  margin: auto;
+}
+
 a.social-networks {
   color: #000000;
-  font-size: xx-large;
+  font-size: 40px;
+  margin-right: 10px;
 }
 
 a.social-networks:hover {

@@ -8,13 +8,11 @@
     
 }
 
-.contenedor {
-    background-color: #CE97B0;
-}
+
 
 .navbar-light .navbar-nav .nav-link:hover {
     background-color: rgba(36, 48, 60, 0.3);
-    color: white;
+    color: #ffffff;
     text-decoration: underline;
 }
 
@@ -22,6 +20,7 @@
     width: 100%;
     margin: auto;
 }
+
 
 nav.fixed-top {
     background-color: #becceb;
@@ -88,9 +87,8 @@ h2 {
 $display:flex;
 $padding-bottom: 200px; 
 $font-size: 50px;
-
 $font-style: oblique ;
-$background-color: gray;    
+$background-color: #808080 ;    
 $padding: 20px 10px 10px ;
 $border-radius:5px;
 
@@ -105,6 +103,10 @@ $border-radius:5px;
     border-radius: $border-radius;
 }
 
+.contenedor-main{
+    width: 100%;
+    margin: auto;
+}
 /* Variables section-2 */
 
 $background-size: contain;
@@ -423,17 +425,21 @@ $background-color:  #687980;
 }
 
 
-/*Variables sc 7-iconos-redes*/
+/*Variables footer-iconos-redes*/
 
-$margin:10px;
-$padding:0;
-$width:50px;
-$padding-bottom:3px;
+.contenedor-footer{
+    width: 100%;
+    margin: auto;
+}
+
+
 
 a.social-networks {
     color: #000000;
-    font-size: xx-large;
+    font-size: 40px;
+    margin-right: 10px;
 }
+
 a.social-networks:hover {
     color: red;
     transform: rotate(60deg);
@@ -452,9 +458,10 @@ a.social-networks:hover {
     justify-content: space-around;
     margin: 30px;
     
-    
-    
 }
+
+
+
 
 
 /*Variables whathsapp*/
