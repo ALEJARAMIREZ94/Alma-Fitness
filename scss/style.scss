@@ -158,19 +158,19 @@ $color: black;
 
 /* Variables iframe */
 
-$width:78vh;
-$height:75%;
+
+$height:70%;
 $justify-content: center;
 $display : flex;
 $margin-top: 100px; 
 
 iframe{
-    width:$width;
+    
     height:$height;
     justify-content: $justify-content;
     display : $display;
     margin-top: $margin-top; 
-    margin-left: 61px;
+    margin-left: 40px;
     
 }
 
@@ -417,13 +417,21 @@ $background-color:  #687980;
 
 .card-text{
     font-style: oblique;
-    background-color: #EAE2B6;
+    
 }
 
-.card-img{
-    opacity: 85%;
+.card-challenges {
+    color: #0061A8;
+    font-weight: bold;
 }
 
+.register-card {
+    color: #810000;
+}
+
+.register-card:hover{
+    color:rgba(36, 48, 60, 0.5);
+}
 
 /*Variables footer-iconos-redes*/
 
@@ -437,7 +445,7 @@ $background-color:  #687980;
 a.social-networks {
     color: #000000;
     font-size: 40px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 a.social-networks:hover {
@@ -486,7 +494,7 @@ $width:60px;
 
 /*media querties*/
 
-@media only screen and (min-width:1400px) {
+@media only screen and (min-width:768px) {
  nav, main{
     width: 1200px;
     flex-wrap: wrap;
@@ -494,13 +502,14 @@ $width:60px;
 }
 }
 
-// @media only screen and (min-width:960px){
-//     body{  flex-wrap : wrap;
-//         width : 100%;
-//     }
+//  @media only screen and (min-width:960px){
+//      body{  flex-wrap : wrap;
+//          width : 100%;
+//            margin:auto;
+//      }
 // }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:400px){
     body {   
         flex-wrap: wrap;
         width: 100%;
@@ -509,6 +518,7 @@ $width:60px;
         .titulo{
             width: 50%;
         }
+        
         .yoga{
             display: none;
         }

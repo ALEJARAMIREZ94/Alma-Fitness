@@ -100,12 +100,11 @@ h2 {
 
 /* Variables iframe */
 iframe {
-  width: 78vh;
-  height: 75%;
+  height: 70%;
   justify-content: center;
   display: flex;
   margin-top: 100px;
-  margin-left: 61px;
+  margin-left: 40px;
 }
 
 /* Variables sc-3 resultados */
@@ -281,11 +280,19 @@ iframe {
 
 .card-text {
   font-style: oblique;
-  background-color: #EAE2B6;
 }
 
-.card-img {
-  opacity: 85%;
+.card-challenges {
+  color: #0061A8;
+  font-weight: bold;
+}
+
+.register-card {
+  color: #810000;
+}
+
+.register-card:hover {
+  color: rgba(36, 48, 60, 0.5);
 }
 
 /*Variables footer-iconos-redes*/
@@ -297,7 +304,7 @@ iframe {
 a.social-networks {
   color: #000000;
   font-size: 40px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 a.social-networks:hover {
@@ -333,14 +340,14 @@ a.social-networks:hover {
 }
 
 /*media querties*/
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 768px) {
   nav, main {
     width: 1200px;
     flex-wrap: wrap;
     margin: auto;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   body {
     flex-wrap: wrap;
     width: 100%;
