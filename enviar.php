@@ -22,5 +22,5 @@ mail($para, $asunto, utf8_decode($mensaje), $header);
 
 header("Location:index.html"); /*a donde envia al usuario luego de completar el form*/
 ?>
-enviar2.php
-Mostrando enviar2.php
+enviar.php
+Mostrando enviar.php
