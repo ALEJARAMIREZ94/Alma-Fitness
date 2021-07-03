@@ -267,7 +267,6 @@ $display: flex;
     background-color: #24303c;
     padding: 5px;
     border-radius: 4px;
-    // margin: 20px;
     margin-bottom: 16px;
     border: 1px solid #1f53c5;
     font-family: 'calibri';
@@ -510,23 +509,43 @@ $width:60px;
 // }
 
 @media only screen and (max-width:400px){
-    body {   
+    
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .contenedor-main {   
         flex-wrap: wrap;
         width: 100%;
+        margin: 0px;
+        padding: 0px;
         
         
-        .titulo{
-            width: 50%;
+        .frase-1{
+            margin:103px;
+            
+        }
+
+        .frase-2{
+            margin: 108px;
         }
         
         .yoga{
             display: none;
+        }
+
+        .resultados{
+            padding: 0px;
         }
         
         .testimonios{
             display: none;
         }
         
+        .form-register {
+            width: 100%;
+        }
         
     }
 }

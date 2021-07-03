@@ -348,18 +348,34 @@ a.social-networks:hover {
   }
 }
 @media only screen and (max-width: 400px) {
-  body {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .contenedor-main {
     flex-wrap: wrap;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
   }
-  body .titulo {
-    width: 50%;
+  .contenedor-main .frase-1 {
+    margin: 103px;
   }
-  body .yoga {
+  .contenedor-main .frase-2 {
+    margin: 108px;
+  }
+  .contenedor-main .yoga {
     display: none;
   }
-  body .testimonios {
+  .contenedor-main .resultados {
+    padding: 0px;
+  }
+  .contenedor-main .testimonios {
     display: none;
+  }
+  .contenedor-main .form-register {
+    width: 100%;
   }
 }
 
