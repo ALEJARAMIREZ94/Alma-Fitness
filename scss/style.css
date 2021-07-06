@@ -348,11 +348,6 @@ a.social-networks:hover {
   }
 }
 @media only screen and (max-width: 400px) {
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
-
   .contenedor-main {
     flex-wrap: wrap;
     width: 100%;
