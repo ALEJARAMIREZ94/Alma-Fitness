@@ -316,11 +316,8 @@ a:hover{
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
-    // position: relative;
-    // left: 200px;
-    // bottom: 15px;
     width: 50%;
-    // flex-wrap: wrap;
+    curs
     
 }
 
@@ -501,19 +498,11 @@ $width:60px;
 }
 }
 
-//  @media only screen and (min-width:960px){
-//      body{  flex-wrap : wrap;
-//          width : 100%;
-//            margin:auto;
-//      }
-// }
+
 
 @media only screen and (max-width:400px){
     
-    // // *{
-    //     margin: 0px;
-    //     padding: 0px;
-    // // }
+  
     
     .contenedor-main {   
         flex-wrap: wrap;
@@ -549,6 +538,7 @@ $width:60px;
         
     }
 }
+
 
 
 
