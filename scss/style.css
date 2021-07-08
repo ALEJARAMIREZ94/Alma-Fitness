@@ -3,8 +3,12 @@
 /*posicion*/
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
-* {
-  box-sizing: border-box;
+.container-fluid {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
@@ -44,8 +48,12 @@ h2 {
   font-family: cursive;
   display: flex;
   justify-content: left;
-  padding: 0 50px;
+  padding: 100px !important;
   transform: skewX(20deg);
+}
+
+.body {
+  margin: 0;
 }
 
 .carrusel {
@@ -221,7 +229,6 @@ iframe {
   flex-wrap: wrap;
   margin: auto;
   background-color: #DDDDDD;
-  border: rounded-top;
   background-color: #24303c;
 }
 
@@ -278,7 +285,7 @@ iframe {
   font-weight: bold;
 }
 
-.card-text {
+.card-img {
   font-style: oblique;
 }
 
@@ -293,6 +300,11 @@ iframe {
 
 .register-card:hover {
   color: rgba(36, 48, 60, 0.5);
+}
+
+.encabezado {
+  color: #CF0000;
+  font-size: 20px;
 }
 
 /*Variables footer-iconos-redes*/
@@ -354,12 +366,6 @@ a.social-networks:hover {
     margin: 0px;
     padding: 0px;
   }
-  .contenedor-main .frase-1 {
-    margin: 103px;
-  }
-  .contenedor-main .frase-2 {
-    margin: 108px;
-  }
   .contenedor-main .yoga {
     display: none;
   }
@@ -371,6 +377,13 @@ a.social-networks:hover {
   }
   .contenedor-main .form-register {
     width: 100%;
+  }
+  .contenedor-main .desafios {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor-main iframe {
+    width: 348px;
   }
 }
 
