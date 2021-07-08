@@ -3,6 +3,10 @@
 /*posicion*/
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
+* {
+  box-sizing: border-box;
+}
+
 .container-fluid {
   width: 100%;
   padding-left: 15px;
@@ -44,11 +48,10 @@ h1 {
 /* Variables titulo-h2 */
 h2 {
   font-size: 50px;
-  margin: 5px 130px 150px;
+  margin: 0 200px;
   font-family: cursive;
   display: flex;
   justify-content: left;
-  padding: 100px !important;
   transform: skewX(20deg);
 }
 
@@ -260,11 +263,6 @@ iframe {
   margin: 50px 0px;
 }
 
-.desafios-contenedor {
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
 .desafios {
   text-align: center;
   font-size: 45px;
@@ -283,6 +281,7 @@ iframe {
 .encabezado {
   text-transform: uppercase;
   font-weight: bold;
+  color: #CF0000;
 }
 
 .card-img {
@@ -361,29 +360,37 @@ a.social-networks:hover {
 }
 @media only screen and (max-width: 400px) {
   .contenedor-main {
-    flex-wrap: wrap;
     width: 100%;
     margin: 0px;
     padding: 0px;
   }
-  .contenedor-main .yoga {
+
+  .yoga {
     display: none;
   }
-  .contenedor-main .resultados {
+
+  .resultados {
     padding: 0px;
   }
-  .contenedor-main .testimonios {
+
+  .testimonios {
     display: none;
   }
-  .contenedor-main .form-register {
+
+  .form-register {
     width: 100%;
   }
-  .contenedor-main .desafios {
-    display: flex;
-    flex-wrap: wrap;
+
+  .desafios-contenedor {
+    flex-direction: column;
   }
-  .contenedor-main iframe {
+
+  iframe {
     width: 348px;
+  }
+
+  .card-text {
+    font-family: cursive;
   }
 }
 

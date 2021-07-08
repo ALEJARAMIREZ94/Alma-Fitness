@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css");
 
-// *{
-//     box-sizing: border-box;
+*{
+    box-sizing: border-box;
     
-// }
+}
 
 .container-fluid {
     width: 100%;
@@ -65,10 +65,9 @@ h1{
 /* Variables titulo-h2 */
 
 $font-size: 50px;
-$margin: 5px 130px 150px;
+$margin:  0 200px ;
 $display: flex;
 $justify-content: left;
-// $padding: 0 50px;
 $transform: skewX(20deg);
 
 h2 {
@@ -77,7 +76,6 @@ h2 {
     font-family: $font-family-cursive;
     display: $display;
     justify-content: $justify-content;
-    padding: $padding;
     transform: $transform;
     
 }
@@ -115,13 +113,6 @@ $border-radius:5px;
 .contenedor-main{
     width: 100%;
     margin: auto;
-    
-    //     width: 100%;
-    //     padding-left: 15px;
-    //     padding-right: 15px;
-    //     margin-left: auto;
-    //     margin-right: auto;
-    
 }
 /* Variables section-2 */
 
@@ -205,7 +196,6 @@ $font-size: 45px;
 
 
 .resultados{
-    
     display: $display;
     justify-items: $justify-items;
     padding: $padding;
@@ -333,8 +323,7 @@ a:hover{
     justify-content: space-between;
     background-color: white;
     width: 50%;
-    
-    
+ 
 }
 
 .list-group{
@@ -393,11 +382,7 @@ a:hover{
     
 }
 
-.desafios-contenedor {
-    margin-right: 0px;
-    margin-left: 0px;
 
-}
 
 .desafios {
     text-align: center;
@@ -405,10 +390,7 @@ a:hover{
     font-weight: bold;
     margin-bottom: 50px;
     font-family: $font-family-garamond;
-    font-weight: bold;
-    
-    
-    
+    font-weight: bold; 
 }
 
 /* Variables section-7 */
@@ -417,19 +399,16 @@ $background-color:  #687980;
 
 .section-7{
     background-color: $background-color;
-    margin: $margin;
-    
-    
+    margin: $margin; 
 }
 
 .encabezado{ text-transform:uppercase;
     font-weight: bold;
+    color: #CF0000;
 }
 
 .card-img{
-    font-style: oblique;
-   
-    
+    font-style: oblique;  
 }
 
 .card-challenges {
@@ -455,13 +434,6 @@ $background-color:  #687980;
 .contenedor-footer{
     width: 100%;
     margin: auto;
-    
-        // width: 100%;
-        // padding-left: 15px;
-        // padding-right: 15px;
-        // margin-left: auto;
-        // margin-right: auto;
-    
 }
 
 
@@ -523,8 +495,6 @@ $width:60px;
     width: 1200px;
     flex-wrap: wrap;
     margin: auto;
-    // margin: 0;
-    // padding: 0;
 }
 }
 
@@ -535,26 +505,11 @@ $width:60px;
   
     
     .contenedor-main {   
-        flex-wrap: wrap;
         width: 100%;
         margin: 0px;
         padding: 0px;
         
-            // width: 100%;
-            // padding-left: 15px;
-            // padding-right: 15px;
-            // margin-left: auto;
-            // margin-right: auto;
-        
-        
-        // .frase-1{
-        //     margin:103px;
-            
-        // }
-
-        // .frase-2{
-        //     margin: 108px;
-        // }
+    }
         
         .yoga{
             display: none;
@@ -572,16 +527,21 @@ $width:60px;
             width: 100%;
         }
 
-        .desafios {
-            display: flex;
-            flex-wrap: wrap;
+        .desafios-contenedor { 
+            
+            flex-direction: column;
         }
         
         iframe {
             width: 348px;
         }
+        
+        .card-text {
+            font-family: cursive;
+        }
+        
     }
-}
+
 
 
 
