@@ -297,6 +297,10 @@ iframe {
   color: #810000;
 }
 
+.card-text {
+  font-family: cursive;
+}
+
 .register-card:hover {
   color: rgba(36, 48, 60, 0.5);
 }
@@ -387,10 +391,6 @@ a.social-networks:hover {
 
   iframe {
     width: 348px;
-  }
-
-  .card-text {
-    font-family: cursive;
   }
 }
 

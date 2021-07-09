@@ -420,6 +420,10 @@ $background-color:  #687980;
     color: #810000;
 }
 
+.card-text {
+    font-family: cursive;
+}
+
 .register-card:hover{
     color:rgba(36, 48, 60, 0.5);
 }
@@ -536,9 +540,7 @@ $width:60px;
             width: 348px;
         }
         
-        .card-text {
-            font-family: cursive;
-        }
+        
         
     }
 
