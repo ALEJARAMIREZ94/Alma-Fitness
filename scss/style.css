@@ -48,7 +48,7 @@ h1 {
 /* Variables titulo-h2 */
 h2 {
   font-size: 50px;
-  margin: 0 200px;
+  margin: 0 200px 100px;
   font-family: cursive;
   display: flex;
   justify-content: left;
@@ -242,6 +242,13 @@ iframe {
   opacity: 85%;
 }
 
+.galeria-img {
+  height: 300px;
+  object-fit: cover;
+  flex-wrap: wrap;
+  opacity: 85%;
+}
+
 .list-group-item {
   display: flex;
   flex-wrap: wrap;
@@ -268,6 +275,7 @@ iframe {
   font-size: 45px;
   font-weight: bold;
   margin-bottom: 50px;
+  margin-top: 130px;
   font-family: "EB Garamond", serif;
   font-weight: bold;
 }
@@ -393,7 +401,24 @@ a.social-networks:hover {
   }
 
   iframe {
-    width: 348px;
+    width: 330px;
+  }
+
+  .card-imgs {
+    width: 380px;
+  }
+
+  .galeria-img {
+    width: auto;
+  }
+
+  .col-6 {
+    width: auto;
+  }
+
+  .covid {
+    padding-left: 0px;
+    font-size: 21px;
   }
 }
 
