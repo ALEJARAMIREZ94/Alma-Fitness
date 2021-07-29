@@ -331,6 +331,7 @@ a.social-networks {
   color: #000000;
   font-size: 40px;
   margin-right: 20px;
+  text-decoration: none;
 }
 
 a.social-networks:hover {
@@ -401,7 +402,7 @@ a.social-networks:hover {
   }
 
   iframe {
-    width: 330px;
+    width: 300px;
   }
 
   .card-imgs {
